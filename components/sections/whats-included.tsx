@@ -1,4 +1,6 @@
-import { Cpu, Compass } from "lucide-react"
+"use client"
+
+import { Cpu, Compass, ArrowRight } from "lucide-react"
 
 const designSuiteTools = [
   { icon: "W", name: "Wiring for Impact™", description: "How you're built to contribute", color: "turquoise" },
@@ -41,7 +43,11 @@ function ToolItem({ icon, name, description, color }: { icon: string; name: stri
   )
 }
 
-export function WhatsIncludedSection() {
+interface WhatsIncludedSectionProps {
+  onOpenSignup: () => void
+}
+
+export function WhatsIncludedSection({ onOpenSignup }: WhatsIncludedSectionProps) {
   return (
     <section id="whats-included" className="py-28 px-4 lg:px-16 bg-cream">
       <div className="max-w-6xl mx-auto">
@@ -97,6 +103,17 @@ export function WhatsIncludedSection() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-16">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-turquoise text-white px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-turquoise/30 transition-all"
+          >
+            Access All Tools
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
       </div>
     </section>

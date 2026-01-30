@@ -1,4 +1,6 @@
-import { Zap, Brain, Compass } from "lucide-react"
+"use client"
+
+import { Zap, Brain, Compass, ArrowRight } from "lucide-react"
 
 const steps = [
   {
@@ -27,7 +29,11 @@ const steps = [
   },
 ]
 
-export function HowItWorksSection() {
+interface HowItWorksSectionProps {
+  onOpenSignup: () => void
+}
+
+export function HowItWorksSection({ onOpenSignup }: HowItWorksSectionProps) {
   return (
     <section id="how-it-works" className="py-28 px-4 lg:px-16 bg-gradient-to-b from-cream to-muted">
       <div className="max-w-6xl mx-auto">
@@ -119,6 +125,17 @@ export function HowItWorksSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-16">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-red text-white px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-red/30 transition-all"
+          >
+            Start Your Path
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
       </div>
     </section>

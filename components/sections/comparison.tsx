@@ -1,4 +1,6 @@
-import { Check, X } from "lucide-react"
+"use client"
+
+import { Check, X, ArrowRight } from "lucide-react"
 
 const comparisons = [
   {
@@ -19,7 +21,11 @@ const comparisons = [
   },
 ]
 
-export function ComparisonSection() {
+interface ComparisonSectionProps {
+  onOpenSignup: () => void
+}
+
+export function ComparisonSection({ onOpenSignup }: ComparisonSectionProps) {
   return (
     <section className="py-28 px-4 lg:px-16 bg-cream">
       <div className="max-w-5xl mx-auto">
@@ -73,6 +79,17 @@ export function ComparisonSection() {
               <span className="text-orange">Align360 shows you what to do with it.</span>
             </p>
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-red text-white px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-red/30 transition-all"
+          >
+            Experience the Difference
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
       </div>
     </section>

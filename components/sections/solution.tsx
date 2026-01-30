@@ -1,6 +1,12 @@
-import { Sparkles } from "lucide-react"
+"use client"
 
-export function SolutionSection() {
+import { Sparkles, ArrowRight } from "lucide-react"
+
+interface SolutionSectionProps {
+  onOpenSignup: () => void
+}
+
+export function SolutionSection({ onOpenSignup }: SolutionSectionProps) {
   return (
     <section className="py-28 px-4 lg:px-16 bg-cream">
       <div className="max-w-4xl mx-auto">
@@ -49,6 +55,17 @@ export function SolutionSection() {
               <p className="text-azure/70 mt-2">
                 You can{"'"}t organize a life you don{"'"}t understand.
               </p>
+            </div>
+
+            {/* CTA Button */}
+            <div className="pt-6">
+              <button
+                onClick={onOpenSignup}
+                className="group inline-flex items-center justify-center gap-2 bg-turquoise text-white px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-turquoise/30 transition-all"
+              >
+                Start Your Optimization
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
-import { GraduationCap, Users, BookOpen } from "lucide-react"
+"use client"
+
+import { GraduationCap, Users, BookOpen, ArrowRight } from "lucide-react"
 
 const audiences = [
   {
@@ -21,7 +23,11 @@ const audiences = [
   },
 ]
 
-export function WhoItsForSection() {
+interface WhoItsForSectionProps {
+  onOpenSignup: () => void
+}
+
+export function WhoItsForSection({ onOpenSignup }: WhoItsForSectionProps) {
   return (
     <section className="py-28 px-4 lg:px-16 bg-gradient-to-b from-muted to-cream">
       <div className="max-w-5xl mx-auto">
@@ -53,6 +59,17 @@ export function WhoItsForSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-16">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-azure text-cream px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-azure/30 transition-all"
+          >
+            Find Your Path
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
       </div>
     </section>

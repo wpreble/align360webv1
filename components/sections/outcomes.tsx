@@ -1,4 +1,6 @@
-import { Clock, Target, TrendingUp, Sparkles, Shield, Zap } from "lucide-react"
+"use client"
+
+import { Zap, Target, Sparkles, ArrowRight } from "lucide-react"
 
 const outcomes = [
   {
@@ -28,7 +30,11 @@ const outcomes = [
   },
 ]
 
-export function OutcomesSection() {
+interface OutcomesSectionProps {
+  onOpenSignup: () => void
+}
+
+export function OutcomesSection({ onOpenSignup }: OutcomesSectionProps) {
   return (
     <section className="py-28 px-4 lg:px-16 bg-azure relative overflow-hidden">
       {/* Background accents */}
@@ -84,6 +90,17 @@ export function OutcomesSection() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-16">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-orange text-azure px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-orange/30 transition-all"
+          >
+            Get These Outcomes
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
       </div>
     </section>
