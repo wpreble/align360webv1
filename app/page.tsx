@@ -9,6 +9,7 @@ import { HowItWorksSection } from "@/components/sections/how-it-works"
 import { OutcomesSection } from "@/components/sections/outcomes"
 import { WhatsIncludedSection } from "@/components/sections/whats-included"
 import { WhoItsForSection } from "@/components/sections/who-its-for"
+import { PricingSection } from "@/components/sections/pricing"
 import { FounderSection } from "@/components/sections/founder"
 import { ComparisonSection } from "@/components/sections/comparison"
 import { GuaranteeSection } from "@/components/sections/guarantee"
@@ -30,6 +31,7 @@ export default function Home() {
       <OutcomesSection onOpenSignup={openModal} />
       <WhatsIncludedSection onOpenSignup={openModal} />
       <WhoItsForSection onOpenSignup={openModal} />
+      <PricingSection onOpenSignup={openModal} />
       <FounderSection onOpenSignup={openModal} />
       <ComparisonSection onOpenSignup={openModal} />
       <GuaranteeSection onOpenSignup={openModal} />
