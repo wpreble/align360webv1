@@ -13,12 +13,17 @@ const designSuiteTools = [
 ]
 
 const careerNavigatorTools = [
-  { icon: "C", name: "Career Alignment", description: "Work that fits who you are", color: "red" },
-  { icon: "T", name: "Transition Planning", description: "Change without burnout", color: "red" },
-  { icon: "G", name: "Growth Path Clarity", description: "Advance without losing yourself", color: "red" },
+  { icon: "1", name: "Career Alignment Assessment", color: "red" },
+  { icon: "2", name: "Resume Analyzer and Builder", color: "red" },
+  { icon: "3", name: "Job Opportunity Finder", color: "red" },
+  { icon: "4", name: "Skills Gap Analyzer", color: "red" },
+  { icon: "5", name: "Job Market Insights", color: "red" },
+  { icon: "6", name: "Interview Preparation", color: "red" },
+  { icon: "7", name: "Salary Negotiation Calculator", color: "red" },
+  { icon: "8", name: "LinkedIn Optimization", color: "red" },
 ]
 
-function ToolItem({ icon, name, description, color }: { icon: string; name: string; description: string; color: string }) {
+function ToolItem({ icon, name, description, color }: { icon: string; name: string; description?: string; color: string }) {
   const colorClasses = {
     turquoise: "bg-turquoise/10 border-turquoise/20 hover:border-turquoise/40",
     orange: "bg-orange/10 border-orange/20 hover:border-orange/40",
@@ -31,13 +36,13 @@ function ToolItem({ icon, name, description, color }: { icon: string; name: stri
   }
 
   return (
-    <div className={`rounded-xl p-5 flex items-start gap-4 border-2 transition-all duration-200 hover:translate-x-1 ${colorClasses[color as keyof typeof colorClasses]}`}>
+    <div className={`rounded-xl p-5 flex items-center gap-4 border-2 transition-all duration-200 hover:translate-x-1 ${colorClasses[color as keyof typeof colorClasses]}`}>
       <div className={`w-10 h-10 rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0 ${iconColorClasses[color as keyof typeof iconColorClasses]}`}>
         {icon}
       </div>
       <div>
         <h4 className="font-semibold text-azure">{name}</h4>
-        <p className="text-sm text-azure/65">{description}</p>
+        {description && <p className="text-sm text-azure/65">{description}</p>}
       </div>
     </div>
   )
