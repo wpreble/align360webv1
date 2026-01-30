@@ -1,4 +1,6 @@
-import { AlertCircle } from "lucide-react"
+"use client"
+
+import { AlertCircle, ArrowRight } from "lucide-react"
 
 const painPoints = [
   "Education",
@@ -8,7 +10,11 @@ const painPoints = [
   "Relationships",
 ]
 
-export function ProblemSection() {
+interface ProblemSectionProps {
+  onOpenSignup: () => void
+}
+
+export function ProblemSection({ onOpenSignup }: ProblemSectionProps) {
   return (
     <section className="py-28 px-4 lg:px-16 bg-azure relative overflow-hidden">
       {/* Subtle background pattern */}
@@ -50,6 +56,17 @@ export function ProblemSection() {
           <p className="text-lg text-cream/75">
             And every time life shifts, you start over from scratch.
           </p>
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-12">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-orange text-azure px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-orange/30 transition-all"
+          >
+            Stop Guessing
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
 
         {/* Visual divider */}

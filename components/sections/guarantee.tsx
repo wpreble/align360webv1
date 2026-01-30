@@ -1,6 +1,12 @@
-import { Zap, Heart } from "lucide-react"
+"use client"
 
-export function GuaranteeSection() {
+import { Zap, Heart, ArrowRight } from "lucide-react"
+
+interface GuaranteeSectionProps {
+  onOpenSignup: () => void
+}
+
+export function GuaranteeSection({ onOpenSignup }: GuaranteeSectionProps) {
   return (
     <section className="py-28 px-4 lg:px-16 bg-gradient-to-br from-turquoise to-[#5d8a82] relative overflow-hidden">
       {/* Background accent */}
@@ -33,6 +39,17 @@ export function GuaranteeSection() {
               A thriving life of peace and simplicity—or we work with you until you get there.
             </p>
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-12">
+          <button
+            onClick={onOpenSignup}
+            className="group inline-flex items-center justify-center gap-2 bg-white text-azure px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-white/30 transition-all"
+          >
+            Begin Your Transformation
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
       </div>
     </section>

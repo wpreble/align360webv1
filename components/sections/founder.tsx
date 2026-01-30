@@ -1,5 +1,7 @@
+"use client"
+
 import Image from "next/image"
-import { BookOpen, Briefcase, Globe } from "lucide-react"
+import { BookOpen, Briefcase, Globe, ArrowRight } from "lucide-react"
 
 const credentials = [
   { icon: Briefcase, text: "$200M+ in executed deals" },
@@ -7,7 +9,11 @@ const credentials = [
   { icon: Globe, text: "Fortune 500 experience" },
 ]
 
-export function FounderSection() {
+interface FounderSectionProps {
+  onOpenSignup: () => void
+}
+
+export function FounderSection({ onOpenSignup }: FounderSectionProps) {
   return (
     <section id="founder" className="py-28 px-4 lg:px-16 bg-azure">
       <div className="max-w-5xl mx-auto">
@@ -84,6 +90,17 @@ export function FounderSection() {
               <p className="text-cream/85">
                 {"Align360 isn't theory. It's the system Samuel wished existed when he was starting over with nothing—built from two decades of lived experience, $200M+ in real-world execution, and 5 books on leadership and resilience."}
               </p>
+            </div>
+
+            {/* CTA Button */}
+            <div className="mt-10">
+              <button
+                onClick={onOpenSignup}
+                className="group inline-flex items-center justify-center gap-2 bg-orange text-azure px-8 py-4 rounded-xl font-semibold text-lg hover:translate-y-[-2px] hover:shadow-xl hover:shadow-orange/30 transition-all"
+              >
+                Join the Founder{"'"}s Circle
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
           </div>
         </div>
