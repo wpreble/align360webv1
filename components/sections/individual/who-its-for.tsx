@@ -37,14 +37,14 @@ export function IndividualWho() {
           <h2 className="mb-5 font-serif [font-size:clamp(34px,4.5vw,56px)] font-medium leading-[1.07] text-white">
             Built for people ready to see what's actually in the way.
           </h2>
-          <p className="text-sm font-light leading-[1.8] text-white/40">
+          <p className="text-sm font-light leading-[1.8] text-white/60">
             Whether you're figuring out your own path or helping someone else find theirs, Align is for
             the person who has tried the assessments, the courses, the coaching, and still feels like
             something precise is missing.
           </p>
           <div className="mt-9 border border-white/[.06] bg-white/[.03] p-6">
             <div className="mb-2 text-[9px] font-medium uppercase tracking-[.2em] text-gold">Not for</div>
-            <p className="text-[13px] font-light leading-[1.7] text-white/35">
+            <p className="text-[13px] font-light leading-[1.7] text-white/50">
               People who want generic motivation. People who want a personality label. People who are
               not ready to see precisely what is between them and their impact.
             </p>
@@ -62,7 +62,7 @@ export function IndividualWho() {
               </span>
               <div>
                 <h3 className="mb-1 text-sm font-medium text-white">{item.title}</h3>
-                <p className="text-xs font-light leading-[1.65] text-white/40">{item.body}</p>
+                <p className="text-xs font-light leading-[1.65] text-white/60">{item.body}</p>
               </div>
             </li>
           ))}

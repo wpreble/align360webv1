@@ -37,7 +37,7 @@ export function FiveDoors() {
             <br />
             <em className="text-gold-light">Just the problem that's costing you.</em>
           </h2>
-          <p className="mt-4 text-sm font-light leading-[1.8] text-white/55">
+          <p className="mt-4 text-sm font-light leading-[1.8] text-white/65">
             Five named entry points into the same intelligence layer. Start wherever it's costing you
             the most right now, and add the others as you need them.
           </p>
@@ -51,7 +51,7 @@ export function FiveDoors() {
             >
               <DoorOpen aria-hidden className="mb-4 h-[22px] w-[22px] text-gold-light" strokeWidth={1.5} />
               <h3 className="mb-2.5 font-serif text-[17px] font-medium leading-[1.25] text-white">{door.title}</h3>
-              <p className="text-xs font-light leading-[1.6] text-white/55">{door.body}</p>
+              <p className="text-xs font-light leading-[1.6] text-white/65">{door.body}</p>
             </li>
           ))}
         </ul>

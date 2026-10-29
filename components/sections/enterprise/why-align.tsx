@@ -44,7 +44,7 @@ export function WhyAlign() {
             key={reason.title}
             className="grid gap-4 border-b border-wine/[.08] py-9 lg:grid-cols-[72px_1fr_1fr] lg:gap-10"
           >
-            <span aria-hidden className="font-serif text-[52px] font-medium leading-none text-wine/10">
+            <span aria-hidden className="font-serif text-[52px] font-medium leading-none text-wine/20">
               0{i + 1}
             </span>
             <div>

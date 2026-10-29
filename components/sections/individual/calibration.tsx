@@ -33,13 +33,13 @@ export function Calibration() {
             <br />
             Your signals should too.
           </h2>
-          <p className="max-w-[580px] text-[15px] font-light leading-[1.8] text-white/40">
+          <p className="max-w-[580px] text-[15px] font-light leading-[1.8] text-white/60">
             The first set of signals reflects the 2022 professional landscape, the world as it was when
             most assessment tools were designed. The second reflects where value is concentrating in an
             AI-accelerated world. Both are built from the same profile. The difference is the world they
             are speaking into.
           </p>
-          <p className="mt-3 text-[11px] uppercase tracking-[.16em] text-white/25">
+          <p className="mt-3 text-[11px] uppercase tracking-[.16em] text-white/45">
             Sample calibration · illustrative profile
           </p>
         </div>
@@ -58,12 +58,12 @@ export function Calibration() {
 
             <div className="mb-5 border-b border-white/5 pb-5">
               <h3 className="mb-2 font-serif text-lg font-normal text-white">Strategic advisory &amp; consulting</h3>
-              <p className="mb-2.5 text-[11px] tracking-[.04em] text-white/30">
+              <p className="mb-2.5 text-[11px] tracking-[.04em] text-white/50">
                 Organizer wiring · Truth-Seeker · Paradigm Challenger gift
               </p>
               <div className="mb-2 flex flex-wrap gap-1.5">
-                <span className={`${chip} border-white/[.12] text-white/40`}>Management Consultant</span>
-                <span className={`${chip} border-white/[.12] text-white/40`}>Strategy Consultant</span>
+                <span className={`${chip} border-white/[.12] text-white/60`}>Management Consultant</span>
+                <span className={`${chip} border-white/[.12] text-white/60`}>Strategy Consultant</span>
                 <span className={`${chip} border-white/[.06] text-white/20`}>
                   <Locked>████ ███████</Locked>
                 </span>
@@ -79,11 +79,11 @@ export function Calibration() {
 
             <div className="mb-5 border-b border-white/5 pb-5">
               <h3 className="mb-2 font-serif text-lg font-normal text-white">Leadership development &amp; coaching</h3>
-              <p className="mb-2.5 text-[11px] tracking-[.04em] text-white/30">
+              <p className="mb-2.5 text-[11px] tracking-[.04em] text-white/50">
                 Realist supporting gift · Relational processing · Insight secondary
               </p>
               <div className="mb-2 flex flex-wrap gap-1.5">
-                <span className={`${chip} border-white/[.12] text-white/40`}>Executive Coach</span>
+                <span className={`${chip} border-white/[.12] text-white/60`}>Executive Coach</span>
                 <span className={`${chip} border-white/[.06] text-white/20`}>
                   <Locked>████████ ███████</Locked>
                 </span>
@@ -103,7 +103,7 @@ export function Calibration() {
             <div className="mb-5 inline-flex items-center gap-2 border border-[#5B9FE8]/25 px-3 py-1.5 text-[9px] font-medium uppercase tracking-[.22em] text-[#5B9FE8]/70">
               <span aria-hidden>◎</span> AI-era calibration
             </div>
-            <p className="mb-6 text-[13px] font-light italic leading-[1.65] text-white/50">
+            <p className="mb-6 text-[13px] font-light italic leading-[1.65] text-white/60">
               The same profile. A different world. These signals are recalibrated for what AI is doing to
               the value of each capability.{" "}
               <em className="font-medium not-italic text-[#5B9FE8]/70">
@@ -132,7 +132,7 @@ export function Calibration() {
                   <Locked>██ ██████████ ███████</Locked>
                 </span>
               </div>
-              <p className="text-xs italic leading-[1.65] text-white/30">
+              <p className="text-xs italic leading-[1.65] text-white/50">
                 <Locked>
                   AI gives every organization the same information and the same analysis. What it cannot
                   give them is the question that exposes when the whole framework is wrong.
@@ -158,7 +158,7 @@ export function Calibration() {
             <h3 className="mb-1.5 font-serif text-xl leading-[1.3] text-white">
               See your Wiring result free. Unlock your full calibration when you're ready.
             </h3>
-            <p className="max-w-[540px] text-[13px] font-light leading-[1.65] text-white/40">
+            <p className="max-w-[540px] text-[13px] font-light leading-[1.65] text-white/60">
               The 2022 signals, the AI-era signals, the AI risk for each category, and why your specific
               wiring produces the market position it does are part of your full result. It is not a
               generic career guide. It is yours.

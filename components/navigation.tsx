@@ -72,7 +72,7 @@ export function Navigation() {
               alt="Align"
               width={411}
               height={124}
-              className="h-8 w-auto object-contain"
+              className="h-9 w-auto object-contain"
               priority
             />
           </Link>
@@ -84,7 +84,7 @@ export function Navigation() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-[11px] font-medium uppercase tracking-[.2em] text-white/50 transition-colors hover:text-white"
+                    className="text-[11px] font-medium uppercase tracking-[.2em] text-white/60 transition-colors hover:text-white"
                   >
                     {link.label}
                   </a>
@@ -149,7 +149,7 @@ function AudienceToggle({ isIndividual }: { isIndividual: boolean }) {
             aria-current={active ? "page" : undefined}
             className={cn(
               "rounded-full px-5 py-2 text-[10px] font-medium uppercase tracking-[.12em] transition-all duration-300",
-              active ? "bg-wine text-white" : "text-white/50 hover:text-white",
+              active ? "bg-wine text-white" : "text-white/60 hover:text-white",
             )}
           >
             {label}

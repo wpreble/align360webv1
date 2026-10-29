@@ -13,7 +13,7 @@ const variantClass: Record<Variant, string> = {
   gold: "btn btn-gold",
   ghost: "btn btn-ghost",
   outline: "btn btn-outline",
-  link: "text-[10px] uppercase tracking-[.16em] text-white/30 transition-colors hover:text-white/60",
+  link: "text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white",
 }
 
 interface CtaButtonProps {

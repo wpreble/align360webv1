@@ -38,7 +38,7 @@ export function Trust() {
   return (
     <Section id="trust" tone="obsidian" className="border-t border-white/[.04] lg:py-[88px]">
       <div className="mx-auto mb-14 max-w-[720px] text-center">
-        <div className="mb-5 text-[9px] font-medium uppercase tracking-[.22em] text-white/25">
+        <div className="mb-5 text-[9px] font-medium uppercase tracking-[.22em] text-white/45">
           Enterprise trust
         </div>
         <p className="font-serif text-[22px] italic leading-[1.5] text-white/80">
@@ -51,12 +51,12 @@ export function Trust() {
           <li key={title} className="border border-white/[.06] bg-white/[.015] px-6 py-7">
             <Icon aria-hidden className="mb-4 h-5 w-5 text-gold" strokeWidth={1.5} />
             <h3 className="mb-2 text-[10px] font-medium uppercase tracking-[.16em] text-white/70">{title}</h3>
-            <p className="text-[13px] font-light leading-[1.65] text-white/40">{body}</p>
+            <p className="text-[13px] font-light leading-[1.65] text-white/60">{body}</p>
           </li>
         ))}
       </ul>
 
-      <p className="mx-auto mt-10 max-w-[720px] text-center text-xs font-light leading-[1.7] text-white/30">
+      <p className="mx-auto mt-10 max-w-[720px] text-center text-xs font-light leading-[1.7] text-white/50">
         Align360 isn't SOC 2 or HIPAA certified, because we mainly build custom for our enterprise
         partners. We're prepared to pursue either on a client-by-client basis.
       </p>

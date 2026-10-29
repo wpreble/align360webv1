@@ -38,7 +38,7 @@ export function IndividualFinalCta() {
         <h2 className="mb-4 font-serif [font-size:clamp(36px,6vw,72px)] font-medium leading-none text-white">
           Ready to <em className="text-gold-light">optimize?</em>
         </h2>
-        <p className="mb-12 text-[15px] font-light leading-[1.8] text-white/40">
+        <p className="mb-12 text-[15px] font-light leading-[1.8] text-white/60">
           Join the Founder's Circle for early access and direct input on what we build next.
         </p>
 
@@ -53,14 +53,14 @@ export function IndividualFinalCta() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email to begin"
-            className="flex-1 border border-white/10 bg-white/[.07] px-5 py-4 text-[13px] text-white outline-none transition-colors placeholder:text-white/25 focus:border-gold/35 sm:border-r-0"
+            className="flex-1 border border-white/10 bg-white/[.07] px-5 py-4 text-[13px] text-white outline-none transition-colors placeholder:text-white/45 focus:border-gold/35 sm:border-r-0"
           />
           <button type="submit" className="btn btn-primary whitespace-nowrap !px-[26px] !py-4 !text-[10px]">
             Begin →
           </button>
         </form>
 
-        <p className="mb-8 text-[10px] tracking-[.1em] text-white/25">
+        <p className="mb-8 text-[10px] tracking-[.1em] text-white/45">
           Early access + direct input on what we build next · Moves to Life Systems only with your consent
         </p>
 

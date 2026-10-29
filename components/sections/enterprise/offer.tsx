@@ -67,7 +67,7 @@ export function Offer() {
             Higher-end customization
           </div>
           <h3 className="mb-3 font-serif text-[22px] font-medium leading-[1.2] text-white">Sovereign build</h3>
-          <p className="mb-6 text-[13px] font-light leading-[1.7] text-white/50">
+          <p className="mb-6 text-[13px] font-light leading-[1.7] text-white/60">
             For firms and government partners that need everything in full self-custody: full data, AI
             inference and platform sovereignty, with sensitive IP staying inside your boundary. Scoped
             as a custom build, per client.

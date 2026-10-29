@@ -54,11 +54,10 @@ export function HowWeWork() {
 
       <ol className="mt-14 grid gap-px border border-wine/[.08] bg-wine/[.08] md:grid-cols-2 lg:grid-cols-4">
         {steps.map((step, i) => (
-          <li key={step.title} className="bg-white px-7 py-9">
-            <div className="mb-5 font-serif text-[11px] font-medium tracking-[.12em] text-cherry/25">
+          <li key={step.title} className="border-t-2 border-t-wine bg-white px-7 py-9">
+            <div className="mb-4 font-serif text-[40px] font-medium leading-none text-wine/25">
               0{i + 1}
             </div>
-            <div className="mb-5 h-px w-7 bg-wine" aria-hidden />
             <h3 className="mb-2.5 font-serif text-[21px] font-medium leading-[1.2] text-obsidian">{step.title}</h3>
             <p className="text-[13px] font-light leading-[1.75] text-ink-muted">{step.body}</p>
           </li>

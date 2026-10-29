@@ -35,7 +35,7 @@ export function IndividualHero() {
           <em className="mt-1 block text-gold-light">Then become one.</em>
         </h1>
 
-        <p className="animate-fade-in-up animation-delay-300 mx-auto mt-8 max-w-[600px] text-[clamp(14px,1.8vw,18px)] font-light leading-[1.8] text-white/50">
+        <p className="animate-fade-in-up animation-delay-300 mx-auto mt-8 max-w-[600px] text-[clamp(14px,1.8vw,18px)] font-light leading-[1.8] text-white/60">
           Align360 solves what's urgent, then builds the clarity to ignite everything else. One
           operating system that evolves with you: it finds the one pattern between you and your full
           impact, and routes every decision and Align AI recommendation through closing it.
@@ -49,38 +49,38 @@ export function IndividualHero() {
         </div>
 
         <div className="mt-20">
-          <p className="mb-5 text-[10px] font-medium uppercase tracking-[.24em] text-white/25">Sample result</p>
+          <p className="mb-5 text-[10px] font-medium uppercase tracking-[.24em] text-white/45">Sample result</p>
           <div className="inline-flex flex-wrap items-stretch justify-center gap-4 border border-white/[.06] bg-white/[.03] p-6">
             {sample.map((chip) => (
               <div key={chip.label} className="flex min-w-[120px] flex-col items-center px-5 py-4">
-                <span className="mb-1.5 text-[9px] font-medium uppercase tracking-[.2em] text-white/30">
+                <span className="mb-1.5 text-[9px] font-medium uppercase tracking-[.2em] text-white/50">
                   {chip.label}
                 </span>
                 <span className="mb-1 font-serif text-[32px] font-medium leading-none text-white">{chip.value}</span>
                 <span className="h-px w-[60px] bg-white/10">
                   <span className="block h-full bg-gold" style={{ width: `${chip.bar}%` }} />
                 </span>
-                <span className="mt-1 text-[10px] tracking-[.04em] text-white/30">{chip.sub}</span>
+                <span className="mt-1 text-[10px] tracking-[.04em] text-white/50">{chip.sub}</span>
               </div>
             ))}
             <span className="hidden w-px self-stretch bg-white/[.06] md:block" aria-hidden />
             <div className="flex min-w-[140px] flex-col items-center px-5 py-4">
-              <span className="mb-1.5 text-[9px] font-medium uppercase tracking-[.2em] text-white/30">Primary gap</span>
+              <span className="mb-1.5 text-[9px] font-medium uppercase tracking-[.2em] text-white/50">Primary gap</span>
               <span className="pt-1 font-serif text-lg font-medium leading-tight text-white">
                 Release
                 <br />
                 Threshold
               </span>
-              <span className="mt-1.5 text-[10px] tracking-[.04em] text-white/30">Capability domain · 3/10</span>
+              <span className="mt-1.5 text-[10px] tracking-[.04em] text-white/50">Capability domain · 3/10</span>
             </div>
             <div className="flex min-w-[140px] flex-col items-center px-5 py-4">
-              <span className="mb-1.5 text-[9px] font-medium uppercase tracking-[.2em] text-white/30">The practice</span>
+              <span className="mb-1.5 text-[9px] font-medium uppercase tracking-[.2em] text-white/50">The practice</span>
               <span className="pt-1 font-serif text-base font-medium leading-tight text-white">
                 State it.
                 <br />
                 Then stop.
               </span>
-              <span className="mt-1.5 text-[10px] tracking-[.04em] text-white/30">One sentence. Achievable today.</span>
+              <span className="mt-1.5 text-[10px] tracking-[.04em] text-white/50">One sentence. Achievable today.</span>
             </div>
           </div>
         </div>

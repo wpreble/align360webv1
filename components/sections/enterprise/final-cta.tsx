@@ -15,7 +15,7 @@ export function EnterpriseFinalCta() {
           <br />
           <em className="text-gold-light">At organizational scale.</em>
         </h2>
-        <p className="mb-12 text-[15px] font-light leading-[1.8] text-white/40">
+        <p className="mb-12 text-[15px] font-light leading-[1.8] text-white/60">
           Your people are already making decisions that shape your organization.
           <br className="hidden md:block" /> Give them, and you, a system that makes those decisions land right.
         </p>
@@ -27,7 +27,7 @@ export function EnterpriseFinalCta() {
             For Individuals →
           </CtaButton>
         </div>
-        <p className="text-[10px] tracking-[.1em] text-white/25">
+        <p className="text-[10px] tracking-[.1em] text-white/45">
           Live walkthroughs on request · Every engagement scoped with you
         </p>
       </div>

@@ -65,13 +65,13 @@ export function IndividualHowItWorks() {
               Integrated User Model · Sample
             </div>
             <div className="mb-0.5 font-serif text-[80px] font-normal leading-none text-gold-light">86</div>
-            <div className="mb-8 text-[11px] font-medium uppercase tracking-[.2em] text-white/30">
+            <div className="mb-8 text-[11px] font-medium uppercase tracking-[.2em] text-white/50">
               Convicted · Clarity layer
             </div>
             <ul className="flex flex-col gap-3.5">
               {domains.map((domain) => (
                 <li key={domain.name} className="flex items-center gap-3.5">
-                  <span className="min-w-[76px] text-[11px] tracking-[.04em] text-white/40">{domain.name}</span>
+                  <span className="min-w-[76px] text-[11px] tracking-[.04em] text-white/60">{domain.name}</span>
                   <span className="h-px flex-1 bg-white/[.08]">
                     <span
                       className="block h-full"
@@ -82,7 +82,7 @@ export function IndividualHowItWorks() {
                 </li>
               ))}
               <li className="mt-2 flex items-center gap-3.5 border-t border-white/[.06] pt-3.5">
-                <span className="min-w-[76px] text-[11px] tracking-[.04em] text-white/40">Value Score™</span>
+                <span className="min-w-[76px] text-[11px] tracking-[.04em] text-white/60">Value Score™</span>
                 <span className="h-px flex-1 bg-white/[.08]">
                   <span className="block h-full bg-gold" style={{ width: "92%" }} />
                 </span>
@@ -93,7 +93,7 @@ export function IndividualHowItWorks() {
               <div className="mb-1.5 text-[9px] font-medium uppercase tracking-[.18em] text-gold">
                 Align AI · Peak day signal
               </div>
-              <p className="text-xs italic leading-[1.7] text-white/45">
+              <p className="text-xs italic leading-[1.7] text-white/60">
                 &ldquo;You build what is right. The last step is releasing it without the apology. Today
                 is a Peak day, full capacity. This is the window. State it. Then stop.&rdquo;
               </p>

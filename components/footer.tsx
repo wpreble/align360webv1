@@ -12,16 +12,16 @@ export function Footer() {
           alt="Align"
           width={411}
           height={124}
-          className="h-7 w-auto opacity-45 brightness-[10]"
+          className="h-7 w-auto opacity-80"
         />
-        <p className="text-[10px] font-medium uppercase tracking-[.22em] text-white/20">
+        <p className="text-[10px] font-medium uppercase tracking-[.22em] text-white/45">
           Clarity · Alignment · Abundance
         </p>
         <ul className="flex items-center gap-7">
           <li>
             <Link
               href={siteConfig.privacyHref}
-              className="text-[10px] uppercase tracking-[.16em] text-white/30 transition-colors hover:text-white/60"
+              className="text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white"
             >
               Privacy
             </Link>
@@ -29,7 +29,7 @@ export function Footer() {
           <li>
             <Link
               href={siteConfig.termsHref}
-              className="text-[10px] uppercase tracking-[.16em] text-white/30 transition-colors hover:text-white/60"
+              className="text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white"
             >
               Terms
             </Link>
@@ -41,7 +41,7 @@ export function Footer() {
           </li>
         </ul>
       </div>
-      <p className="mx-auto mt-8 max-w-[1200px] text-center text-[10px] tracking-[.08em] text-white/20 lg:text-left">
+      <p className="mx-auto mt-8 max-w-[1200px] text-center text-[10px] tracking-[.08em] text-white/45 lg:text-left">
         © {new Date().getFullYear()} {siteConfig.legalEntity}. All rights reserved.
       </p>
     </footer>

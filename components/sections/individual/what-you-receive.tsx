@@ -56,7 +56,7 @@ export function WhatYouReceive() {
             <p className="mb-1.5 text-sm font-medium leading-[1.4] text-white/75">
               You release the work. Then you apologize before anyone evaluates it.
             </p>
-            <p className="mb-[18px] text-xs leading-[1.7] text-white/40">
+            <p className="mb-[18px] text-xs leading-[1.7] text-white/60">
               You send the proposal and add &ldquo;let me know if the pricing feels too high.&rdquo; The
               Realist gift, your diagnostic precision, is running one beat past its productive range at
               the moment of delivery. This is not insecurity. This is a gift misapplied.
@@ -75,7 +75,7 @@ export function WhatYouReceive() {
                   <div className="font-serif text-lg font-medium" style={{ color: domain.color }}>
                     {domain.value}
                   </div>
-                  <div className="mt-0.5 text-[9px] tracking-[.04em] text-white/25">{domain.label}</div>
+                  <div className="mt-0.5 text-[9px] tracking-[.04em] text-white/45">{domain.label}</div>
                 </li>
               ))}
             </ul>

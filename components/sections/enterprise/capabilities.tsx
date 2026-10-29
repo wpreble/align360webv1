@@ -55,7 +55,7 @@ export function Capabilities() {
         <h2 className="font-serif [font-size:clamp(34px,4.5vw,56px)] font-medium leading-[1.07] text-white">
           Not a tool. An <em className="text-gold-light">intelligence layer</em> for your workforce.
         </h2>
-        <p className="mt-4 text-sm font-light leading-[1.8] text-white/40">
+        <p className="mt-4 text-sm font-light leading-[1.8] text-white/60">
           Three views, each custom-built around how your firm operates. Every one is powered by what
           individuals choose to share, so leaders see patterns across teams and never an individual's
           answers.
@@ -92,10 +92,10 @@ export function Capabilities() {
               <PrototypeTag />
             </div>
             <h3 className="mb-3 font-serif text-[26px] font-medium leading-[1.15] text-white">{view.title}</h3>
-            <p className="mb-6 text-[13px] font-light leading-[1.7] text-white/45">{view.body}</p>
+            <p className="mb-6 text-[13px] font-light leading-[1.7] text-white/60">{view.body}</p>
             <ul className="flex flex-col gap-2">
               {view.items.map((item) => (
-                <li key={item} className="flex items-start gap-2.5 text-[11px] leading-[1.5] tracking-[.03em] text-white/40">
+                <li key={item} className="flex items-start gap-2.5 text-[11px] leading-[1.5] tracking-[.03em] text-white/60">
                   <span aria-hidden className="mt-[7px] h-[3px] w-[3px] flex-shrink-0 rounded-full bg-white/25" />
                   {item}
                 </li>
@@ -105,7 +105,7 @@ export function Capabilities() {
         ))}
       </ul>
 
-      <p className="mt-6 max-w-[760px] text-xs font-light leading-[1.7] text-white/30">
+      <p className="mt-6 max-w-[760px] text-xs font-light leading-[1.7] text-white/50">
         These views are shown as prototypes. They're the custom builds we do inside an engagement, and
         timelines are set once the scope is agreed.
       </p>

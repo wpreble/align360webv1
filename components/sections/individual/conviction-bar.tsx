@@ -10,7 +10,7 @@ export function ConvictionBar() {
         <span className="hidden h-20 w-px flex-shrink-0 bg-white/[.12] lg:block" aria-hidden />
         <div className="flex-shrink-0 lg:text-right">
           <div className="font-serif text-[52px] font-medium leading-none text-gold-light">5</div>
-          <div className="mt-1 text-[10px] font-medium uppercase leading-[1.5] tracking-[.18em] text-white/35">
+          <div className="mt-1 text-[10px] font-medium uppercase leading-[1.5] tracking-[.18em] text-white/50">
             Assessments build
             <br />
             your living model

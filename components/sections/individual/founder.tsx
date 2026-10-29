@@ -94,7 +94,7 @@ export function IndividualFounder() {
               {scores.map((score) => (
                 <li key={score.label} className="flex-1 border border-white/5 bg-white/[.04] p-3.5 text-center">
                   <div className="font-serif text-[30px] font-medium leading-none text-gold-light">{score.value}</div>
-                  <div className="mt-1 text-[9px] font-medium uppercase tracking-[.14em] text-white/30">{score.label}</div>
+                  <div className="mt-1 text-[9px] font-medium uppercase tracking-[.14em] text-white/50">{score.label}</div>
                 </li>
               ))}
             </ul>

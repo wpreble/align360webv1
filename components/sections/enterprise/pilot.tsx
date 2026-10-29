@@ -19,7 +19,7 @@ export function Pilot() {
         <h2 className="mb-5 font-serif [font-size:clamp(32px,4.5vw,56px)] font-medium leading-[1.07] text-white">
           Start with a <em className="text-gold-light">funded, bounded pilot.</em>
         </h2>
-        <p className="mb-[52px] text-base font-light leading-[1.75] text-white/50">
+        <p className="mb-[52px] text-base font-light leading-[1.75] text-white/60">
           Five things we ask of every enterprise pilot partner. That's it. No open-ended contract
           before you've seen what alignment intelligence does for your team.
         </p>
@@ -30,7 +30,7 @@ export function Pilot() {
               <div aria-hidden className="mb-2.5 font-serif text-[28px] leading-none text-gold/40">
                 0{i + 1}
               </div>
-              <p className="text-[11px] font-light leading-[1.55] text-white/55">{ask}</p>
+              <p className="text-[11px] font-light leading-[1.55] text-white/65">{ask}</p>
             </li>
           ))}
         </ol>

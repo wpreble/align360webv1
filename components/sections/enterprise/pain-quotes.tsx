@@ -25,7 +25,7 @@ export function PainQuotes() {
               &ldquo;
             </div>
             <p className="mb-2.5 font-serif text-base italic leading-[1.5] text-white/85">{item.quote}</p>
-            <p className="text-[10px] uppercase tracking-[.1em] text-white/30">{item.label}</p>
+            <p className="text-[10px] uppercase tracking-[.1em] text-white/50">{item.label}</p>
           </li>
         ))}
       </ul>

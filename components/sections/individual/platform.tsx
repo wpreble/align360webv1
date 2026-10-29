@@ -100,13 +100,13 @@ export function Platform() {
           <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-[#0D6B6B] to-[#4EC9C8]" aria-hidden />
           <div className="mb-5 flex items-center justify-between gap-3">
             <StatusTag className="text-gold">Tier 2 · Organize</StatusTag>
-            <StatusTag className="text-white/50">
+            <StatusTag className="text-white/60">
               <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-[#27AE60]" /> Live now
             </StatusTag>
           </div>
           <h3 className="mb-2 font-serif text-[28px] font-medium leading-[1.15] text-white">Life Systems</h3>
           <p className="mb-2 font-serif text-lg text-white/80">Integrate360™: where clarity becomes a life.</p>
-          <p className="mb-6 text-[13px] font-light leading-[1.7] text-white/50">
+          <p className="mb-6 text-[13px] font-light leading-[1.7] text-white/60">
             Once you know who you are and where you're headed, Life Systems is everything built around
             that: a life that holds together instead of competing with itself.
           </p>
@@ -117,7 +117,7 @@ export function Platform() {
               </CheckItem>
             ))}
           </ul>
-          <p className="border-t border-white/10 pt-5 text-[11px] leading-[1.7] tracking-[.03em] text-white/35">
+          <p className="border-t border-white/10 pt-5 text-[11px] leading-[1.7] tracking-[.03em] text-white/50">
             Align AI can suggest Life Systems when it fits. You decide, always.
           </p>
         </div>

@@ -74,7 +74,7 @@ export function Contexts() {
             <Icon aria-hidden className="mb-4 h-[22px] w-[22px] text-wine" strokeWidth={1.5} />
             <p className="mb-2 text-[9px] font-medium uppercase tracking-[.18em] text-wine">{tag}</p>
             <h3 className="mb-2 font-serif text-[18px] font-medium leading-[1.25] text-obsidian">{title}</h3>
-            <p className="text-xs font-light leading-[1.6] text-[#7A7080]">{body}</p>
+            <p className="text-xs font-light leading-[1.6] text-ink-muted">{body}</p>
           </li>
         ))}
       </ul>

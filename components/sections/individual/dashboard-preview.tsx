@@ -56,9 +56,9 @@ export function DashboardPreview() {
                 <line x1="2" y1="20" x2="9" y2="20" stroke="white" strokeWidth="1.2" strokeOpacity=".5" />
                 <line x1="31" y1="20" x2="38" y2="20" stroke="white" strokeWidth="1.2" strokeOpacity=".5" />
               </svg>
-              <span className="text-[11px] font-medium uppercase tracking-[.2em] text-white/50">Align360</span>
+              <span className="text-[11px] font-medium uppercase tracking-[.2em] text-white/60">Align360</span>
             </div>
-            <div className="flex items-center gap-1.5 text-[10px] tracking-[.06em] text-white/30">
+            <div className="flex items-center gap-1.5 text-[10px] tracking-[.06em] text-white/50">
               <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-[#27AE60] shadow-[0_0_6px_#27AE60]" />
               Sample · Peak day · Building season
             </div>
@@ -77,7 +77,7 @@ export function DashboardPreview() {
                       className={
                         item === group.active
                           ? "rounded border-l-2 border-gold/50 bg-white/[.07] px-2.5 py-[7px] text-[11px] tracking-[.04em] text-white/75"
-                          : "px-2.5 py-[7px] text-[11px] tracking-[.04em] text-white/30"
+                          : "px-2.5 py-[7px] text-[11px] tracking-[.04em] text-white/50"
                       }
                     >
                       {item}
@@ -92,7 +92,7 @@ export function DashboardPreview() {
                 <p className="mb-1 font-serif text-[22px] text-white/90">
                   Good morning, <em className="text-gold-light">Alex.</em>
                 </p>
-                <p className="text-xs text-white/30">Tuesday · Building season · Align AI is loaded and ready.</p>
+                <p className="text-xs text-white/50">Tuesday · Building season · Align AI is loaded and ready.</p>
               </div>
 
               <div className="grid items-center gap-4 border border-white/[.06] bg-white/[.04] p-4 sm:grid-cols-[auto_1fr]">
@@ -119,7 +119,7 @@ export function DashboardPreview() {
                   </svg>
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                     <span className="font-serif text-[22px] leading-none text-gold-light">89</span>
-                    <span className="text-[8px] tracking-[.08em] text-white/30">Alignment</span>
+                    <span className="text-[8px] tracking-[.08em] text-white/50">Alignment</span>
                   </div>
                 </div>
                 <div>
@@ -131,7 +131,7 @@ export function DashboardPreview() {
                   </p>
                   <div className="flex flex-wrap gap-1">
                     {["IR: 86 · Convicted", "VS: 92 · Rockstar", "AI-Era: 94%"].map((chip) => (
-                      <span key={chip} className="rounded-full border border-white/10 px-2 py-0.5 text-[9px] font-medium text-white/40">
+                      <span key={chip} className="rounded-full border border-white/10 px-2 py-0.5 text-[9px] font-medium text-white/60">
                         {chip}
                       </span>
                     ))}
@@ -148,11 +148,11 @@ export function DashboardPreview() {
                   { label: "Value Score™", value: "92", sub: "Authentic Rockstar", color: "#E8C97E", bar: "#C9A96E" },
                 ].map((tile) => (
                   <div key={tile.label} className="border border-white/5 bg-white/[.04] p-3">
-                    <div className="mb-1 text-[9px] font-medium uppercase tracking-[.12em] text-white/30">{tile.label}</div>
+                    <div className="mb-1 text-[9px] font-medium uppercase tracking-[.12em] text-white/50">{tile.label}</div>
                     <div className="mb-0.5 font-serif text-2xl font-medium leading-none" style={{ color: tile.color }}>
                       {tile.value}
                     </div>
-                    <div className="text-[10px] text-white/30">{tile.sub}</div>
+                    <div className="text-[10px] text-white/50">{tile.sub}</div>
                     <div className="mt-2 h-0.5 bg-white/[.06]">
                       <div className="h-full" style={{ width: `${tile.value}%`, background: tile.bar }} />
                     </div>
@@ -164,7 +164,7 @@ export function DashboardPreview() {
                 <div className="mb-1 text-[9px] font-medium uppercase tracking-[.16em] text-gold">
                   Align AI · Peak day · Building season
                 </div>
-                <p className="text-xs italic leading-[1.6] text-white/45">
+                <p className="text-xs italic leading-[1.6] text-white/60">
                   &ldquo;You build what is right. The last step is releasing it without the apology.
                   Today is a Peak day, full capacity. The partnership decision is in your queue. This is
                   the window. State it. Then stop.&rdquo;
@@ -180,7 +180,7 @@ export function DashboardPreview() {
                       style={{ background: item.dot }}
                     />
                     <div>
-                      <div className="mb-0.5 text-[9px] font-medium uppercase tracking-[.1em] text-white/25">{item.type}</div>
+                      <div className="mb-0.5 text-[9px] font-medium uppercase tracking-[.1em] text-white/45">{item.type}</div>
                       <div className="text-[11px] text-white/60">{item.title}</div>
                     </div>
                   </div>

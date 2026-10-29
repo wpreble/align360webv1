@@ -69,7 +69,7 @@ export function SectionHeading({ eyebrow, title, sub, dark, center, className }:
         <p
           className={cn(
             "mt-[18px] text-[15px] font-light leading-[1.8]",
-            dark ? "text-white/45" : "text-ink-muted",
+            dark ? "text-white/60" : "text-ink-muted",
             center ? "mx-auto max-w-[560px]" : "max-w-[560px]",
           )}
         >
