@@ -56,58 +56,60 @@ export function Navigation() {
   }
 
   return (
-    <header
-      className={cn(
-        "fixed inset-x-0 top-0 z-[100] transition-all duration-500 ease-[cubic-bezier(.16,1,.3,1)]",
-        scrolled || menuOpen
-          ? "border-b border-white/5 bg-obsidian/95 py-[18px] backdrop-blur-2xl"
-          : "py-5 lg:py-7",
-      )}
-    >
-      <nav className="flex items-center justify-between px-7 lg:px-[72px]" aria-label="Main">
-        <Link href="/" className="flex-shrink-0" aria-label="Align360 home">
-          <Image
-            src="/images/align-wordmark.png"
-            alt="Align"
-            width={411}
-            height={124}
-            className="h-8 w-auto object-contain"
-            priority
-          />
-        </Link>
+    <>
+      <header
+        className={cn(
+          "fixed inset-x-0 top-0 z-[100] transition-all duration-500 ease-[cubic-bezier(.16,1,.3,1)]",
+          scrolled || menuOpen
+            ? "border-b border-white/5 bg-obsidian/95 py-[18px] backdrop-blur-2xl"
+            : "py-5 lg:py-7",
+        )}
+      >
+        <nav className="flex items-center justify-between px-7 lg:px-[72px]" aria-label="Main">
+          <Link href="/" className="flex-shrink-0" aria-label="Align360 home">
+            <Image
+              src="/images/align-wordmark.png"
+              alt="Align"
+              width={411}
+              height={124}
+              className="h-8 w-auto object-contain"
+              priority
+            />
+          </Link>
 
-        <div className="hidden items-center gap-8 lg:flex">
-          <AudienceToggle isIndividual={isIndividual} />
-          <ul className="hidden items-center gap-8 xl:flex">
-            {links[audience].map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="text-[11px] font-medium uppercase tracking-[.2em] text-white/50 transition-colors hover:text-white"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <button type="button" onClick={openCta} className="btn btn-primary !px-7 !py-[13px] !tracking-[.2em]">
-            {ctaLabel}
+          <div className="hidden items-center gap-8 lg:flex">
+            <AudienceToggle isIndividual={isIndividual} />
+            <ul className="hidden items-center gap-8 xl:flex">
+              {links[audience].map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-[11px] font-medium uppercase tracking-[.2em] text-white/50 transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <button type="button" onClick={openCta} className="btn btn-primary !px-7 !py-[13px] !tracking-[.2em]">
+              {ctaLabel}
+            </button>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setMenuOpen((open) => !open)}
+            className="p-2 text-white lg:hidden"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-        </div>
-
-        <button
-          type="button"
-          onClick={() => setMenuOpen((open) => !open)}
-          className="p-2 text-white lg:hidden"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </nav>
-
+        </nav>
+      </header>
+      {/* Sibling of <header>: its backdrop-filter would otherwise become the containing block for this fixed panel. */}
       {menuOpen && (
-        <div className="flex flex-col items-center gap-7 px-7 pb-10 pt-8 lg:hidden">
+        <div className="fixed inset-x-0 bottom-0 top-[66px] z-[90] flex flex-col items-center gap-7 overflow-y-auto bg-obsidian px-7 pb-10 pt-10 lg:hidden">
           <AudienceToggle isIndividual={isIndividual} />
           <ul className="flex flex-col items-center gap-6">
             {links[audience].map((link) => (
@@ -127,7 +129,7 @@ export function Navigation() {
           </button>
         </div>
       )}
-    </header>
+    </>
   )
 }
 

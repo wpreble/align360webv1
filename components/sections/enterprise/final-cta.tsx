@@ -4,7 +4,7 @@ export function EnterpriseFinalCta() {
   return (
     <section className="relative overflow-hidden bg-obsidian px-7 py-[100px] text-center lg:px-[72px] lg:py-[140px]">
       <div className="glow-center pointer-events-none absolute inset-0" aria-hidden />
-      <div className="relative z-10 mx-auto max-w-[680px]">
+      <div className="relative z-10 mx-auto max-w-[820px]">
         <div className="mb-7 flex items-center justify-center gap-[18px]">
           <span className="text-[10px] font-medium uppercase tracking-[.3em] text-gold/55">
             Enterprise · Organizational Intelligence

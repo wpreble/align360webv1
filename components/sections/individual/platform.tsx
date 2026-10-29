@@ -41,7 +41,7 @@ const addOns = [
 export function Platform() {
   return (
     <Section id="platform" tone="stone">
-      <div className="mb-14 max-w-[600px]">
+      <div className="mb-14 max-w-[760px]">
         <div className="eyebrow mb-3.5">What's included</div>
         <h2 className="h2-serif text-obsidian">
           Identity Profile. Life Systems.

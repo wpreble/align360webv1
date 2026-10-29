@@ -29,9 +29,9 @@ export function IndividualFounder() {
             <Image
               src="/images/founder-headshot.png"
               alt="Samuel Ngu, Founder of Align360"
-              width={96}
-              height={96}
-              className="h-24 w-24 object-cover"
+              width={112}
+              height={112}
+              className="h-28 w-28 object-cover ring-1 ring-wine/20"
             />
             <div>
               <h3 className="font-serif text-2xl font-medium text-obsidian">Samuel Ngu</h3>
