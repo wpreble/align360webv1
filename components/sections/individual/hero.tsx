@@ -15,7 +15,7 @@ export function IndividualHero() {
       <div className="relative z-10 max-w-[980px]">
         <div className="animate-fade-in-up animation-delay-100 mb-9 flex items-center justify-center gap-[18px]">
           <span className="h-px w-9 bg-gold/30" aria-hidden />
-          <span className="text-[10px] font-medium uppercase tracking-[.32em] text-gold/65">
+          <span className="text-[10px] font-medium uppercase tracking-[.32em] text-gold/80">
             Clarity · Alignment · Abundance
           </span>
           <span className="h-px w-9 bg-gold/30" aria-hidden />

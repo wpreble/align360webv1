@@ -68,7 +68,7 @@ export function DashboardPreview() {
             <nav className="hidden flex-col gap-0.5 lg:flex" aria-label="Sample navigation">
               {nav.map((group) => (
                 <div key={group.section}>
-                  <div className="mt-1.5 px-2.5 pb-1 pt-2.5 text-[9px] font-medium uppercase tracking-[.18em] text-white/20">
+                  <div className="mt-1.5 px-2.5 pb-1 pt-2.5 text-[9px] font-medium uppercase tracking-[.18em] text-white/50">
                     {group.section}
                   </div>
                   {group.items.map((item) => (
@@ -123,7 +123,7 @@ export function DashboardPreview() {
                   </div>
                 </div>
                 <div>
-                  <div className="mb-1 text-[9px] font-medium uppercase tracking-[.16em] text-gold/55">
+                  <div className="mb-1 text-[9px] font-medium uppercase tracking-[.16em] text-gold/80">
                     Integrated User Model · Context-independent
                   </div>
                   <p className="mb-1.5 text-[13px] font-medium leading-[1.4] text-white/80">

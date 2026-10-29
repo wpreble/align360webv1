@@ -27,7 +27,7 @@ export function Pilot() {
         <ol className="mb-12 grid gap-3.5 text-left md:grid-cols-2 lg:grid-cols-5">
           {asks.map((ask, i) => (
             <li key={ask} className="border border-gold/[.15] bg-white/5 px-[18px] py-[22px]">
-              <div aria-hidden className="mb-2.5 font-serif text-[28px] leading-none text-gold/40">
+              <div aria-hidden className="mb-2.5 font-serif text-[28px] leading-none text-gold/70">
                 0{i + 1}
               </div>
               <p className="text-[11px] font-light leading-[1.55] text-white/65">{ask}</p>
@@ -38,7 +38,7 @@ export function Pilot() {
         <CtaButton intent="organization" variant="gold">
           Request Your Pilot →
         </CtaButton>
-        <p className="mt-4 text-[10px] tracking-[.12em] text-gold/45">
+        <p className="mt-4 text-[10px] tracking-[.12em] text-gold/80">
           Scope, budget and timeline are agreed together on the call. Nothing is committed before then.
         </p>
       </div>

@@ -30,7 +30,7 @@ export function IndividualFinalCta() {
         />
         <div className="mb-7 flex items-center justify-center gap-[18px]">
           <span className="h-px w-9 bg-gold/30" aria-hidden />
-          <span className="text-[10px] font-medium uppercase tracking-[.3em] text-gold/55">
+          <span className="text-[10px] font-medium uppercase tracking-[.3em] text-gold/80">
             Founder's Circle now open
           </span>
           <span className="h-px w-9 bg-gold/30" aria-hidden />
