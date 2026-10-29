@@ -1,21 +1,36 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Quicksand } from 'next/font/google'
+import { Playfair_Display, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SignupProvider } from '@/components/signup-provider'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
 import './globals.css'
 
-const quicksand = Quicksand({ 
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-quicksand',
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-playfair',
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ['300', '400', '500'],
+  variable: '--font-dm-sans',
 });
 
 export const metadata: Metadata = {
-  title: 'Align360 | Optimize Phase — Discover Your Wiring. Align Your Career.',
-  description: 'Align360 is an AI-powered operating system that helps you understand how you\'re wired, align your career, and build a thriving life of peace and simplicity. Start with the Optimize Phase.',
+  title: {
+    default: 'Align360 | Clarity. Alignment. Abundance.',
+    template: '%s | Align360',
+  },
+  description:
+    'Align360 is an intelligence layer implemented inside your organization: a practical way for legacy businesses, PE firms and consultancies to operate with AI without their leaders having to become AI experts.',
   openGraph: {
-    title: 'Put out the fires. Then become one.',
-    description: 'Align360 solves what\'s urgent—then builds the clarity to ignite everything else. One system. A lifetime of clarity.',
+    title: 'Align360 | Your people are already making decisions.',
+    description:
+      'A custom version of Align, implemented for your firm. Give your people the system to make better decisions.',
   },
   icons: {
     icon: [
@@ -34,7 +49,6 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -44,8 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${quicksand.variable} font-sans antialiased`}>
-        {children}
+      <body className={`${playfair.variable} ${dmSans.variable} font-sans antialiased`}>
+        <SignupProvider>
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+        </SignupProvider>
         <Analytics />
       </body>
     </html>
