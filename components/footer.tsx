@@ -1,40 +1,58 @@
 import Image from "next/image"
+import Link from "next/link"
+import { CtaButton } from "@/components/site/cta-button"
+import { siteConfig } from "@/lib/site-config"
 
 export function Footer() {
   return (
-    <footer className="bg-azure-dark py-16 px-4 lg:px-16">
-      <div className="max-w-4xl mx-auto text-center">
-        <p className="text-cream/80 leading-relaxed mb-8">
-          After you optimize—you organize.
-          <br />
-          Finances. Relationships. Health. Wealth. Legacy.
-          <br />
-          But it only works when the foundation is clear.
+    <footer className="border-t border-white/5 bg-obsidian px-7 py-11 lg:px-[72px]">
+      <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-5 text-center lg:flex-row lg:justify-between lg:text-left">
+        <Image
+          src="/images/align-wordmark.png"
+          alt="Align"
+          width={411}
+          height={124}
+          className="h-7 w-auto opacity-80"
+        />
+        <p className="text-[10px] font-medium uppercase tracking-[.22em] text-white/45">
+          Clarity · Alignment · Abundance
         </p>
-
-        <p className="text-xl font-bold text-orange mb-2">
-          Align360 = Optimize + Organize
-        </p>
-        <p className="text-cream/70 italic">
-          {"Solve what's urgent. Stay aligned for what's next."}
-        </p>
-
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/images/logo.jpg"
-              alt="Align360"
-              width={32}
-              height={32}
-              className="rounded"
-            />
-            <span className="text-cream font-bold text-lg">Align360</span>
-          </div>
-          <p className="text-cream/50 text-sm">
-            © 2025 Feeling Like Chocolate. All rights reserved.
-          </p>
-        </div>
+        <ul className="flex items-center gap-7">
+          <li>
+            <Link
+              href={siteConfig.privacyHref}
+              className="text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white"
+            >
+              Privacy
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={siteConfig.termsHref}
+              className="text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white"
+            >
+              Terms
+            </Link>
+          </li>
+          <li>
+            <CtaButton variant="link" intent="organization">
+              Contact
+            </CtaButton>
+          </li>
+          <li>
+            <Link
+              href={siteConfig.appHref}
+              prefetch={false}
+              className="text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white"
+            >
+              Log in
+            </Link>
+          </li>
+        </ul>
       </div>
+      <p className="mx-auto mt-8 max-w-[1200px] text-center text-[10px] tracking-[.08em] text-white/45 lg:text-left">
+        © {new Date().getFullYear()} {siteConfig.legalEntity}. All rights reserved.
+      </p>
     </footer>
   )
 }
