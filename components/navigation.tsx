@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useSignup } from "@/components/signup-provider"
+import { siteConfig } from "@/lib/site-config"
 
 const audiences = [
   { label: "For Enterprise", href: "/" },
@@ -91,6 +92,16 @@ export function Navigation() {
                 </li>
               ))}
             </ul>
+            {/* Wrapped like the <li> links above so its text sits on the same baseline. */}
+            <div>
+              <Link
+                href={siteConfig.appHref}
+                prefetch={false}
+                className="text-[11px] font-medium uppercase tracking-[.2em] text-white/60 transition-colors hover:text-white"
+              >
+                Log in
+              </Link>
+            </div>
             <button type="button" onClick={openCta} className="btn btn-primary !px-7 !py-[13px] !tracking-[.2em]">
               {ctaLabel}
             </button>
@@ -127,6 +138,14 @@ export function Navigation() {
           <button type="button" onClick={openCta} className="btn btn-primary">
             {ctaLabel}
           </button>
+          <Link
+            href={siteConfig.appHref}
+            prefetch={false}
+            onClick={() => setMenuOpen(false)}
+            className="text-xs font-medium uppercase tracking-[.2em] text-white/70"
+          >
+            Log in
+          </Link>
         </div>
       )}
     </>

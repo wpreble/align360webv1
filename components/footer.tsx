@@ -39,6 +39,15 @@ export function Footer() {
               Contact
             </CtaButton>
           </li>
+          <li>
+            <Link
+              href={siteConfig.appHref}
+              prefetch={false}
+              className="text-[10px] uppercase tracking-[.16em] text-white/50 transition-colors hover:text-white"
+            >
+              Log in
+            </Link>
+          </li>
         </ul>
       </div>
       <p className="mx-auto mt-8 max-w-[1200px] text-center text-[10px] tracking-[.08em] text-white/45 lg:text-left">
